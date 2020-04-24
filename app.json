@@ -1,0 +1,6 @@
+{
+    "name": "eventER",
+    "description": "Event creator on Heroku",
+    "image": "heroku/python",
+    "keywords": ["python", "flask" ]
+}

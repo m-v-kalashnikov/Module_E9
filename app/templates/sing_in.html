@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %}Sing inER{% endblock %}
+
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+    {% include "navbar.html" %}
+{% endblock %}
+
+
+{% block content %}
+  <div class="container">
+    <h1>Привет, я Sing inER</h1>
+    <h3>Я умею регистрировать пользователей</h3>
+    <h4>Заполни форму и нажми на кнопочку...</h4>
+    <h4>Вот увидишь я смогу!</h4>
+    <div class="row">
+      <div class='col'>
+          <form method="POST" action="/sing-in">
+              {{ wtf.quick_form(form, button_map={'submit_button': 'success'}) }}
+          </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}

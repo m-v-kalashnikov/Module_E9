@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %}LogoutER{% endblock %}
+
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+    {% include "navbar.html" %}
+{% endblock %}
+
+
+{% block content %}
+  <div class="container">
+    <h1>Привет, я DeletER</h1>
+    <h3>Я даю возможность пользователям удалять события</h3>
+    <h4>Если вы точно хотите удалить событие, то поставте галочку и нажмите на кнопочку.</h4>
+    <h4>А если передумали то в меню выберите куда вам нужно)</h4>
+    <div class="row">
+      <div class='col'>
+          <form method="POST" action="/event/delete/{{ event.id }}">
+              {{ wtf.quick_form(form, button_map={'submit_button': 'danger'}) }}
+          </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
