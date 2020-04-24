@@ -5,10 +5,10 @@ Homework for SkillFactory module E9
 ### Критерии оценки задания:
 
 - ссылка на github с кодом приложения на Python с использованием Flask в качестве фреймворка и PostgreSQL в качестве базы данных и ссылка на heroku с задеплоенным приложением (1 балл);
+  - https://m-v-kalashnikovs-eventer.herokuapp.com/
     ```
   Вот и ссылка непосредственно: 
     ```
-  - https://m-v-kalashnikovs-eventer.herokuapp.com/
   
   
 - в репозитории есть README.md, в котором написано, как стартовать и как протестировать задеплоенное в heroku приложение (1 балл);
